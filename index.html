@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles.css" />
+        <title>灼陽系儀Web</title>
+    </head>
+    <body>
+        <h1>灼陽系儀</h1>
+        <div class="simWrapper">
+            <canvas id="simCanvas">
+                灼陽系
+            </canvas>
+            <div class="control">
+                <span>拡大</span>
+                <input type="range" id="zoom" min="0" max="1.8" step="0.05" value="0">
+            </div>
+            <div class="control">
+                <span>速度</span>
+                <input type="range" id="speed" min="0" max="2" step="0.1" value="0.3">
+            </div>
+            <div class="checkControl">
+                <span>
+                    <span>雰語表示</span>
+                    <input type="checkbox" id="phun">
+                </span>
+                <span>
+                    <span>逆転</span>
+                    <input type="checkbox" id="reverse">
+                </span>
+            </div>
+        </div>
+    </body>
+    <script src="./src/main.js" type="module"></script>
+</html>
